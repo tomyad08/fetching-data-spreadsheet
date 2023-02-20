@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import PDFFile from "./Nyoba";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PDFDownloadLink document={<PDFFile />} filename="FORM">
+        {({ loading }) =>
+          loading ? (
+            <button>Loading Document...</button>
+          ) : (
+            <button
+              className="btn"
+              style={{ width: "100%", backgroundColor: "white" }}
+            >
+              <span>
+                <img
+                  src="./assets/logoPrint.png"
+                  alt=""
+                  style={{ width: "10%" }}
+                />
+              </span>
+              <span>Print Out</span>
+            </button>
+          )
+        }
+      </PDFDownloadLink>
+      {/* <PDFFile /> */}
     </div>
   );
-}
+};
 
 export default App;
