@@ -1,7 +1,5 @@
 import React, { useState, useRef } from "react";
 import { useSelector } from "react-redux";
-import { Page, Text, Document, StyleSheet } from "@react-pdf/renderer";
-import App from "../App";
 import { useReactToPrint } from "react-to-print";
 
 const Hasil = () => {

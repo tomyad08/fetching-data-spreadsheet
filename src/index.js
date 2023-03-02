@@ -9,12 +9,18 @@ import { Provider } from "react-redux";
 import { store } from "./Lib/Store";
 import PDFFile from "./Nyoba";
 import Struk from "./Nyoba";
+import Navibar from "./Component/NavBar";
+import Banner from "./Component/Banner";
+import NavBanner from "./Component/NavBanner";
+import Kontak from "./Component/Kontak";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <NavBanner />
       <Menu />
+      <Kontak />
     </Provider>
   </React.StrictMode>
 );

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Swal from "sweetalert2";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import axios from "axios";
 
 const url =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRhwvMUd71P5PcgHFFUROHNPerzeCVSmuQSHknTifZcJuBrCZHJlfI5uB5ULjZpZk1p3Ye9M8326lvJ/pub?gid=0&single=true&output=csv";
@@ -33,6 +34,10 @@ const Product = () => {
       total: hargaTotal,
     };
     dispatch(addOrders(datas));
+    axios.post(
+      "https://sheet.best/api/sheets/e7f254a6-d19b-4b83-bacc-0bf54eb74417",
+      datas
+    );
     Swal.fire({
       title: "Pesanan Tercatat",
       text: "Untuk melihat pesanan, silahkan klik menu pesanan.",
@@ -61,6 +66,14 @@ const Product = () => {
 
   return (
     <div className="container-fluid">
+      <h1
+        className="text-center"
+        style={{
+          fontFamily: "'Signika Negative', sans-serif",
+        }}
+      >
+        <strong>Menu Pilihan</strong>
+      </h1>
       <div className="container mb-3" style={{ width: "85%", height: "55px" }}>
         <input
           style={{ width: "100%", height: "47px" }}
@@ -73,19 +86,6 @@ const Product = () => {
         <p>Loading</p>
       ) : (
         <div className="container">
-          <h1
-            className="text-center"
-            style={{
-              fontFamily: "'Signika Negative', sans-serif",
-            }}
-          >
-            <strong>Menu Pilihan</strong>
-          </h1>
-          <p className="text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam minima
-            mollitia rem rerum doloremque aliquid natus illum culpa, omnis
-            nihil?
-          </p>
           <div className="row justify-content-around">
             {products
               .filter((value) => {
