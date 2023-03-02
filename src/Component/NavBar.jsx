@@ -19,20 +19,30 @@ const Navibar = () => {
             >
               Beranda
             </span>
-            <span
-              className="mx-3 fs-4"
-              id="menu"
-              style={{ fontFamily: "'Signika Negative', sans-serif" }}
-            >
-              Menu
-            </span>
-            <span
-              className="mx-3 fs-4"
-              id="menu"
-              style={{ fontFamily: "'Signika Negative', sans-serif" }}
-            >
-              Kontak
-            </span>
+            <a href="#menuPage" style={{ textDecoration: "none" }}>
+              <span
+                className="mx-3 fs-4"
+                id="menu"
+                style={{
+                  fontFamily: "'Signika Negative', sans-serif",
+                  color: "black",
+                }}
+              >
+                Menu
+              </span>
+            </a>
+            <a href="#kontak" style={{ textDecoration: "none" }}>
+              <span
+                className="mx-3 fs-4"
+                id="menu"
+                style={{
+                  fontFamily: "'Signika Negative', sans-serif",
+                  color: "black",
+                }}
+              >
+                Kontak
+              </span>
+            </a>
             <span className="mx-2 float-end" id="sandwich">
               <img
                 src="./assets/fi_menu.png"

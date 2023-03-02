@@ -65,7 +65,7 @@ const Product = () => {
   const hargaTotal = count * data.harga;
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="menuPage">
       <h1
         className="text-center"
         style={{

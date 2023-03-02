@@ -5,6 +5,7 @@ const Kontak = () => {
     <div
       className="container-fluid"
       style={{ backgroundImage: "url(./assets/banner.png)" }}
+      id="kontak"
     >
       <div className="row justify-content around px-1 py-5 text-center">
         <div
@@ -27,16 +28,18 @@ const Kontak = () => {
           </span>
         </div>
         <div className="col-md-3 my-1">
-          <button
-            style={{
-              fontFamily: "'Signika Negative', sans-serif",
-              backgroundColor: "#bc8819",
-              color: "white",
-            }}
-            className="btn px-5 py-2 border border-0 rounded-2 fs-4"
-          >
-            Menu
-          </button>
+          <a href="#menuPage" style={{ textDecoration: "none" }}>
+            <button
+              style={{
+                fontFamily: "'Signika Negative', sans-serif",
+                backgroundColor: "#bc8819",
+                color: "white",
+              }}
+              className="btn px-5 py-2 border border-0 rounded-2 fs-4"
+            >
+              Menu
+            </button>
+          </a>
         </div>
         <div className="col-md-3">
           <h2 style={{ fontFamily: "'Signika Negative', sans-serif" }}>
