@@ -62,24 +62,33 @@ const Navibar = () => {
           }}
           className="p-1 border border-0 rounded-3 d-flex justify-content-around"
         >
-          <div
-            id="menuSandwich"
-            style={{ fontFamily: "'Signika Negative', sans-serif" }}
+          <a
+            href="#menuPage"
+            style={{ textDecoration: "none", color: "black" }}
           >
-            Beranda
-          </div>
-          <div
-            id="menuSandwich"
-            style={{ fontFamily: "'Signika Negative', sans-serif" }}
-          >
-            Menu
-          </div>
-          <div
-            id="menuSandwich"
-            style={{ fontFamily: "'Signika Negative', sans-serif" }}
-          >
-            Kontak
-          </div>
+            <div
+              id="menuSandwich"
+              style={{ fontFamily: "'Signika Negative', sans-serif" }}
+            >
+              Menu
+            </div>
+          </a>
+          <a href="#faq" style={{ textDecoration: "none", color: "black" }}>
+            <div
+              id="menuSandwich"
+              style={{ fontFamily: "'Signika Negative', sans-serif" }}
+            >
+              FAQ
+            </div>
+          </a>
+          <a href="#kontak" style={{ textDecoration: "none", color: "black" }}>
+            <div
+              id="menuSandwich"
+              style={{ fontFamily: "'Signika Negative', sans-serif" }}
+            >
+              Kontak
+            </div>
+          </a>
         </div>
       )}
     </div>

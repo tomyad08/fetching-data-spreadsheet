@@ -2,25 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-
 import "bootstrap/dist/css/bootstrap.css";
-import Menu from "./Page/Menu";
 import { Provider } from "react-redux";
 import { store } from "./Lib/Store";
-import PDFFile from "./Nyoba";
-import Struk from "./Nyoba";
-import Navibar from "./Component/NavBar";
-import Banner from "./Component/Banner";
-import NavBanner from "./Component/NavBanner";
-import Kontak from "./Component/Kontak";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <NavBanner />
-      <Menu />
-      <Kontak />
+      <App />
     </Provider>
   </React.StrictMode>
 );

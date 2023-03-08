@@ -44,4 +44,11 @@ code {
     border-radius: 10px;
     color: aliceblue;
   }
+  #fontNama {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  #fontHarga {
+    font-size: 10px;
+  }
 }

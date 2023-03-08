@@ -1,32 +1,32 @@
 import React from "react";
-import { PDFDownloadLink } from "@react-pdf/renderer";
-import PDFFile from "./Nyoba";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBanner from "./Component/NavBanner";
+import Kontak from "./Component/Kontak";
+import Cemilan from "./Component/Cemilan";
+import Minuman from "./Component/Minuman";
+import Makanan from "./Component/Makanan";
+import Product from "./Component/Product";
+import Kategori from "./Component/NavMenu";
+import Hasil from "./Component/hasil";
 
 const App = () => {
   return (
-    <div className="App">
-      <PDFDownloadLink document={<PDFFile />} filename="FORM">
-        {({ loading }) =>
-          loading ? (
-            <button>Loading Document...</button>
-          ) : (
-            <button
-              className="btn"
-              style={{ width: "100%", backgroundColor: "white" }}
-            >
-              <span>
-                <img
-                  src="./assets/logoPrint.png"
-                  alt=""
-                  style={{ width: "10%" }}
-                />
-              </span>
-              <span>Print Out</span>
-            </button>
-          )
-        }
-      </PDFDownloadLink>
-      {/* <PDFFile /> */}
+    <div>
+      <div style={{ background: "linear-gradient(#FFC74D,#FFF1DC,#FFF1DC)" }}>
+        <NavBanner />
+        <Product />
+        <BrowserRouter>
+          <Kategori />
+          <Routes>
+            <Route path="/" element={<Makanan />} />
+            <Route path="/minuman" element={<Minuman />} />
+            <Route path="/cemilan" element={<Cemilan />} />
+          </Routes>
+        </BrowserRouter>
+        <Hasil />
+
+        <Kontak />
+      </div>
     </div>
   );
 };

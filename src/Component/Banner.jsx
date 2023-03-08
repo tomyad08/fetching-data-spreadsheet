@@ -36,7 +36,8 @@ const Banner = () => {
             <button
               style={{
                 fontFamily: "'Signika Negative', sans-serif",
-                backgroundColor: "#bc8819",
+
+                backgroundColor: "#614124",
                 color: "white",
               }}
               className="btn px-5 py-2 border border-0 rounded-2 fs-4"
@@ -45,11 +46,11 @@ const Banner = () => {
             </button>
           </a>
         </div>
-        <div className="col-md">
+        <div className="col-md py-3">
           <img
-            src="./assets/fotobanner.png"
+            src="./assets/food2.png"
             alt=" "
-            style={{ width: "70%" }}
+            style={{ width: "80%" }}
             className="mx-5"
           />
         </div>

@@ -4,7 +4,9 @@ const Kontak = () => {
   return (
     <div
       className="container-fluid"
-      style={{ backgroundImage: "url(./assets/banner.png)" }}
+      style={{
+        background: "linear-gradient(#FFF1DC,#614124)",
+      }}
       id="kontak"
     >
       <div className="row justify-content around px-1 py-5 text-center">
@@ -15,18 +17,11 @@ const Kontak = () => {
           <h5>Jl. Imam Bonjol No.5</h5>
           <p style={{ lineHeight: "8px" }}>Kec. Babakan, Kab. Cirebon</p>
           <p style={{ lineHeight: "8px" }}>Kode Pos 45191</p>
+          <p style={{ lineHeight: "8px" }}>
+            <strong>WhatsApp: 081543344766</strong>
+          </p>
         </div>
-        <div className="col-md-3 my-1">
-          <span className="mx-1">
-            <img src="./assets/icon_facebook.png" alt=" " />
-          </span>
-          <span className="mx-1">
-            <img src="./assets/icon_instagram.png" alt=" " />
-          </span>
-          <span className="mx-1">
-            <img src="./assets/icon_mail.png" alt=" " />
-          </span>
-        </div>
+
         <div className="col-md-3 my-1">
           <a href="#menuPage" style={{ textDecoration: "none" }}>
             <button
