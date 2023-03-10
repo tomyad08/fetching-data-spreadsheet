@@ -36,7 +36,6 @@ const Banner = () => {
             <button
               style={{
                 fontFamily: "'Signika Negative', sans-serif",
-
                 backgroundColor: "#614124",
                 color: "white",
               }}

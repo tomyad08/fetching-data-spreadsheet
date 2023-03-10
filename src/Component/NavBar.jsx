@@ -57,14 +57,14 @@ const Navibar = () => {
       {kondisi && (
         <div
           style={{
-            backgroundColor: "white",
+            backgroundColor: "#614124",
             width: "100%",
           }}
           className="p-1 border border-0 rounded-3 d-flex justify-content-around"
         >
           <a
             href="#menuPage"
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "white" }}
           >
             <div
               id="menuSandwich"
@@ -73,7 +73,7 @@ const Navibar = () => {
               Menu
             </div>
           </a>
-          <a href="#faq" style={{ textDecoration: "none", color: "black" }}>
+          <a href="#faq" style={{ textDecoration: "none", color: "white" }}>
             <div
               id="menuSandwich"
               style={{ fontFamily: "'Signika Negative', sans-serif" }}
@@ -81,7 +81,7 @@ const Navibar = () => {
               FAQ
             </div>
           </a>
-          <a href="#kontak" style={{ textDecoration: "none", color: "black" }}>
+          <a href="#kontak" style={{ textDecoration: "none", color: "white" }}>
             <div
               id="menuSandwich"
               style={{ fontFamily: "'Signika Negative', sans-serif" }}

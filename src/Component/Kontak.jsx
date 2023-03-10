@@ -5,7 +5,7 @@ const Kontak = () => {
     <div
       className="container-fluid"
       style={{
-        background: "linear-gradient(#FFF1DC,#614124)",
+        background: "linear-gradient(white,#FFC74D)",
       }}
       id="kontak"
     >

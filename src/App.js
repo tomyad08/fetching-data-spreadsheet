@@ -12,7 +12,7 @@ import Hasil from "./Component/hasil";
 const App = () => {
   return (
     <div>
-      <div style={{ background: "linear-gradient(#FFC74D,#FFF1DC,#FFF1DC)" }}>
+      <div style={{ background: "linear-gradient(#FFC74D,white, white)" }}>
         <NavBanner />
         <Product />
         <BrowserRouter>
