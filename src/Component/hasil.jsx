@@ -24,29 +24,33 @@ const Hasil = () => {
           <div>
             <h1 className="text-center">Pesanan</h1>
             {products.map((value) => (
-              <div className="row px-2 justify-content-around">
-                <div className="col " key={value.id}>
-                  <h6>{value.nama}</h6>
-                  <p
-                    style={{
-                      lineHeight: "15px",
-                      fontSize: "12px",
-                      fontFamily: "'Signika Negative', sans-serif",
-                    }}
-                  >
-                    Jumlah: {value.jumlah}
-                  </p>
+              <>
+                <div style={{ display: "none" }}>
+                  {pesanan.push(
+                    ` Pesan= ${value.nama}, Jumlah= ${value.jumlah}, Total= ${value.total} ||`
+                  )}
                 </div>
+                <div className="row px-2 justify-content-around">
+                  <div className="col " key={value.id}>
+                    <h6>{value.nama}</h6>
+                    <p
+                      style={{
+                        lineHeight: "15px",
+                        fontSize: "12px",
+                        fontFamily: "'Signika Negative', sans-serif",
+                      }}
+                    >
+                      Jumlah: {value.jumlah}
+                    </p>
+                  </div>
 
-                <div className="col">
-                  <p className="float-end" key={value.id}>
-                    Rp. {value.total}
-                  </p>
+                  <div className="col">
+                    <p className="float-end" key={value.id}>
+                      Rp. {value.total}
+                    </p>
+                  </div>
                 </div>
-                {pesanan.push(
-                  ` Pesan= ${value.nama}, Jumlah= ${value.jumlah}, Total= ${value.total} ||`
-                )}
-              </div>
+              </>
             ))}
             <div className="px-2 mt-3">
               <h4>Total Pembayaran:</h4>
